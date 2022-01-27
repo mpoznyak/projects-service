@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.List;
 
 @Entity
@@ -23,6 +24,7 @@ public class Project {
     )
     private List<User> users;
 
+    @NotNull
     @Column
     private String name;
 
